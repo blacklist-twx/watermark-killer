@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "WaterKiller",
+    "version": "1.0",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_popup": "popup.html"
+    }
+  }

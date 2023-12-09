@@ -1,0 +1,35 @@
+body{
+    background: rgba(255, 255, 255, 0.5);
+    width: 200px;
+    height: 200px;
+}
+
+#radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#radio-group input[type="radio"] {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: rgb(174, 161, 161);
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    transition: background 0.3s ease-in-out;
+}
+
+#radio-group input[type="radio"]:checked {
+    background: #0e0101;
+}
+
+#radio-group label {
+    font-size: 10px;
+    color: #333;
+    margin-left: 10px;
+}
